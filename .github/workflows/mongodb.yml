@@ -24,8 +24,6 @@ jobs:
 
     steps:
       - uses: actions/checkout@v4
-        with:
-          sparse-checkout: mongodb
 
       - uses: docker/setup-qemu-action@v3
 
@@ -47,7 +45,6 @@ jobs:
       - uses: docker/build-push-action@v5
         name: Build & Push
         with:
-          context: mongodb
           platforms: linux/amd64,linux/arm64
           pull: true
           push: true
