@@ -1,3 +1,4 @@
+# checkov:skip=CKV_DOCKER_3 Mongo upstream doesn't care so nor do I.
 FROM mongo:7.0
 LABEL maintainer="Matthew Baggett <matthew@baggett.me>" \
       org.label-schema.vcs-url="https://github.com/benzine-framework/docker-mongodb" \
